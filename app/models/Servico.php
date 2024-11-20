@@ -20,7 +20,8 @@ class Servico extends Model
 
     public function getServico()
     {
-        $sql = "SELECT nome_servico, descricao_servico FROM tbl_servico ";
+        $sql = "SELECT nome_servico, descricao_servico FROM tbl_servico
+        WHERE status_Servico = 'ATIVO' ";
 
         $stmt = $this->db->prepare($sql);
         // $stmt->bindValue(':limite',(int)$limite,PDO::PARAM_INT);
@@ -31,7 +32,7 @@ class Servico extends Model
     //Medoto para carregar o serviço pelo link
     public function getServicoPorLink($link){
         $sql = "SELECT tbl_servico.*, tbl_galeria.* FROM tbl_servico
-                INNER JOIN tbl_galeria ON tbl_Servico.id_servico = tbl_galeria.id_galeria
+                INNER JOIN tbl_galeria ON tbl_servico.id_servico = tbl_galeria.id_servico
                 WHERE status_Servico = 'ATIVO' AND link_Servico = :link";
 
         $stmt = $this->db->prepare($sql);

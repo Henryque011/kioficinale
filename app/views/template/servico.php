@@ -17,7 +17,6 @@
             <div class="servico">
 
                 <?php foreach ($servicos as $servico): ?>
-
                     <div class="ki-servicos-card">
                         <a href="#">
                             <img src="<?php
@@ -46,7 +45,7 @@
                             <a href="#">ver mais</a>
                         </div>
                     </div>
-                <?php endforeach ?>
+                <?php endforeach; ?>
 
                 <!-- <div class="ki-servicos-card">
                     <a href="#">

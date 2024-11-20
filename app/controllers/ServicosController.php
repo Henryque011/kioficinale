@@ -6,14 +6,13 @@ class ServicosController extends Controller{
         $dados = array();
         //$dados['titulos'] = 'Servicos - Ki Oficina';
 
-        $this->carregarViews('servicos',$dados);
         // intanciar 
-        $servicoModel = new servico();
+        $servicoModel = new Servico();
 
         // obeter os 3 servicos
-        $servico = $servicoModel-> getServico();
+        $servicos = $servicoModel-> getServico();
         // var_dump($servicoAleatorio);
-        $dados['servicos'] = $servico;
+        $dados['servicos'] = $servicos;
         // var_dump($dados);
 
         $this->carregarViews('servicos',$dados);
@@ -24,7 +23,7 @@ class ServicosController extends Controller{
         // var_dump($link);
         $dados = array();
         // intanciar 
-        $servicoModel = new servico();
+        $servicoModel = new Servico();
         $detalheServico = $servicoModel->getServicoPorLink($link);
 
         // var_dump($detalheServico)

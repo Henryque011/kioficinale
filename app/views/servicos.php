@@ -8,7 +8,7 @@
     <meta name="author" content="A">
 
     <!-- Favicon Icon -->
-    <link rel="icon" href="<?php BASE_URL ?>http://localhost/KiOficinale/public/assets/img/favicon.svg">
+    <link rel="icon" href="<?php BASE_URL; ?>http://localhost/KiOficinale/public/assets/img/favicon.svg">
 
     <title><?php echo isset($titulo) ? $titulo : 'Contato - Ki Oficina' ?></title>
     <link rel="stylesheet" href="http://localhost/KiOficinale/public/assets/css/reset.css">
@@ -38,7 +38,7 @@
 <body>
 
     <!-- Iniciar seção de cabeçalho -->
-    <?php require_once('template/topo.php'); ?>
+    
     <!-- Seção final do cabeçalho -->
     <!-- Start All Services -->
 
@@ -63,10 +63,11 @@
                             </a>
                             <p class="desp"><?php echo htmlspecialchars($servico['descricao_servico'], ENT_QUOTES, 'UTF-8');  ?></p>
                             <a href="<?php echo "servico/detalhe/" . htmlspecialchars($servico['link_servico'], ENT_QUOTES, 'UTF-8');  ?>">Saiba Mais</a>
+                            
                         </div>
                     </div>
                 </div>
-            <?php endforeach ?>
+            <?php endforeach; ?>
         </div>
     </div>
 
