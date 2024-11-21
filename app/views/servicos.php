@@ -63,7 +63,6 @@
                             </a>
                             <p class="desp"><?php echo htmlspecialchars($servico['descricao_servico'], ENT_QUOTES, 'UTF-8');  ?></p>
                             <a href="<?php echo "servico/detalhe/" . htmlspecialchars($servico['link_servico'], ENT_QUOTES, 'UTF-8');  ?>">Saiba Mais</a>
-                            
                         </div>
                     </div>
                 </div>

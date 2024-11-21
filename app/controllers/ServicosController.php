@@ -28,16 +28,16 @@ class ServicosController extends Controller{
 
         // var_dump($detalheServico)
 
-        if($detalheServico){
-            // echo 'Carregar as informações do serviço...';
-            $dados['titulo'] = $detalheServico['nome_servico'];
-            $dados['detalhe'] = $detalheServico;
-            $this->carregarViews('detalhe-sericos', $dados);
-        }else{
-            // echo 'Carregar a página de erros';
-            $dados['titulo'] = 'Serviços KiOficina';
+        // if($detalheServico){
+        //     // echo 'Carregar as informações do serviço...';
+        //     $dados['titulo'] = $detalheServico['nome_servico'];
+        //     $dados['detalhe'] = $detalheServico;
+        //     $this->carregarViews('detalhe-sericos', $dados);
+        // }else{
+        // //     // echo 'Carregar a página de erros';
+        //     $dados['titulo'] = 'Serviços KiOficina';
             $this->carregarViews('servicos',$dados);
-        }
+        // }
     
     }
 }
