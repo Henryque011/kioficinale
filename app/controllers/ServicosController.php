@@ -34,8 +34,8 @@ class ServicosController extends Controller{
         //     $dados['detalhe'] = $detalheServico;
         //     $this->carregarViews('detalhe-sericos', $dados);
         // }else{
-        // //     // echo 'Carregar a página de erros';
-        //     $dados['titulo'] = 'Serviços KiOficina';
+        //     // echo 'Carregar a página de erros';
+            // $dados['titulo'] = 'Serviços KiOficina';
             $this->carregarViews('servicos',$dados);
         // }
     
