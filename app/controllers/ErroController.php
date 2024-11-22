@@ -6,7 +6,7 @@ class ErroController{
 
     public function index(){
 
-        echo 'teste erro';
+        // echo 'teste erro';
     }
 
 
