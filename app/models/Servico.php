@@ -20,8 +20,9 @@ class Servico extends Model
 
     public function getServico()
     {
-        $sql = "SELECT nome_servico, descricao_servico FROM tbl_servico
-        WHERE status_Servico = 'ATIVO' ";
+        $sql = "SELECT nome_servico, descricao_servico, link_servico 
+        FROM tbl_servico WHERE status_servico = 'Ativo' 
+        ORDER BY nome_servico;";
 
         $stmt = $this->db->prepare($sql);
         // $stmt->bindValue(':limite',(int)$limite,PDO::PARAM_INT);
@@ -30,15 +31,17 @@ class Servico extends Model
     }
 
     //Medoto para carregar o serviço pelo link
-    public function getServicoPorLink($link){
+    public function getServicoPorLink($link)
+    {
         $sql = "SELECT tbl_servico.*, tbl_galeria.* FROM tbl_servico
-                INNER JOIN tbl_galeria ON tbl_servico.id_servico = tbl_galeria.id_servico
-                WHERE status_Servico = 'ATIVO' AND link_Servico = :link";
+                INNER JOIN tbl_galeria ON tbl_servico.id_servico = tbl_galeria.id_galeria
+                WHERE status_servico = 'Ativo' AND link_servico = :link";
 
         $stmt = $this->db->prepare($sql);
-        $stmt->bindValue(':link', $link);
+        $stmt->bindValue(':link',$link);
         $stmt->execute();
         return $stmt->fetch(PDO::FETCH_ASSOC);
+        
     }
 
     // Método listar todos os Servicos em ordem alfabetica
