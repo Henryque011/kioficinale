@@ -6,7 +6,7 @@ class MarcasController extends Controller{
         $dados = array();
         // $dados['titulos'] = 'Servicos - Ki Oficina';
 
-        // intanciar 
+        // instanciar 
         $MarcasModel = new Marca();
 
         // obeter os 3 servicos
