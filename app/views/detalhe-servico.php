@@ -35,11 +35,13 @@
 </head>
 
 <body>
+
     <!-- Start common page title  -->
     <div class="ak-height-125 ak-height-lg-80"></div>
     <div class="container">
         <div class="d-md-flex justify-content-between align-items-center">
             <div class="common-page-title">
+            
                 <h3 class="page-title"><?php echo $detalhe['nome_servico']; ?></h3>
                 <div class="d-flex gap-2 align-items-center">
                     <p>Home /</p>
@@ -60,13 +62,14 @@
         <div class="primary-color-border"></div>
     </div>
     <!-- End common page title  -->
-
+    <?php require_once('template/topo.php'); ?>
     <!-- Start ALl Content -->
     <div class="ak-height-75 ak-height-lg-80"></div>
     <div class="d-flex justify-content-center">
         <div class="sticky-content container">
             <div class="content">
                 <div class="single-blog-list" data-aos="fade-up">
+
                     <h4 class="single-blog-title">AutoCare Solutions - Tire Services</h4>
                     <p class="single-blog-desp">
                         At AutoCare Solutions, we understand that your tires are a critical component of your
