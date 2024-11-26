@@ -1642,6 +1642,19 @@ a:hover {
 
 }
 
+:root {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #ff5733; /* Altere aqui para a cor desejada */
+    --bs-btn-border-color: #ff5733;
+    --bs-btn-hover-bg: #e14e2d;
+    --bs-btn-hover-border-color: #d64527;
+} 
+
+.btn-primary {
+    background-color: var(--bs-btn-bg) !important; /* estilo */
+    border-color: var(--bs-btn-border-color) !important;
+}  
+
 /*--------------------------------------------------------------
 16. RODAPE
 ----------------------------------------------------------------*/

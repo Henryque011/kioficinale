@@ -1,7 +1,7 @@
 <?php
 
 class Marca extends Model{
-    public function getMarcaAletorio(){
+    public function getMarcasAletorias(){
         $sql = "SELECT tbl_marca.logo_marca, tbl_marca.alt_marca,  tbl_marca.nome_marca
         FROM tbl_marca;";
 

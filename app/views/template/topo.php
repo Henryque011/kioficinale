@@ -57,6 +57,7 @@
                 <h6>11 988 626 603</h6>
             </a>
         </div>
+        
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <img src="http://localhost/KiOficinale/public/assets/img/login.svg" alt="...">

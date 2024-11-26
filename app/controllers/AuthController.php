@@ -5,8 +5,9 @@ class AuthController extends Controller
 
     public function login()
     {
-        var_dump('TEST DE LOGIN');
+        // var_dump('TEST DE LOGIN');
         $dados = array();
+        // var_dump($_POST);
 
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
@@ -15,9 +16,9 @@ class AuthController extends Controller
 
             $tipo_usuario = filter_input(INPUT_POST, 'tipo_usuario');
 
-            var_dump($email);
-            var_dump($senha);
-            var_dump($tipo_usuario);
+            // var_dump($email);
+            // var_dump($senha);
+            // var_dump($tipo_usuario);
 
             if ($email && $senha && $tipo_usuario) {
                 if($tipo_usuario === 'cliente'){
@@ -28,7 +29,7 @@ class AuthController extends Controller
                 }
             } else {
                 // informaçoes invalidas
-                if ($tipo_usuario == "") {
+                if ($tipo_usuario == "selecione") {
                     $dados['msg'] = 'Tipo de usuario não informado';
                     $dados['tipo_msg'] = 'erro-tipo_ususario';
                 } else {

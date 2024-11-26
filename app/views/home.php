@@ -88,44 +88,47 @@
     <!-- Rodape -->
     <?php require_once('template/footer.php'); ?>
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- modal -->
+    <div class="modal" id="modalLogin" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <h5 class="modal-title">Login - Kioficina</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
 
-                    <form method="POST" action="http://localhost/KiOficinale/public/auth/login">
-                        <div class="model-body">
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" name="senha" id="email" class="form-control" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="senha">senha:</label>
-                                <input type="password" name="senha" id="senha" class="form-control" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="tipo-usuario">tipo de usuario</label>
-                                <select class="form-select" name="tipo_usuario" id="tipo_usuario" class="form-control" required>
-                                    <option selected="selecione">selecione</option>
-                                    <option value="cliente">cliente</option>
-                                    <option value="funcionario">funcionario</option>
-                                </select>
-                            </div>
+                    <form method="POST" action="http://localhost/kioficina/public/auth/login">
+                        <div class="mb-3">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" class="form-control" require>
+                        </div>
+                        <div class="mb-3">
+                            <label for="senha">Senha</label>
+                            <input type="password" name="senha" id="senha" class="form-control" require>
+                        </div>
+                        <label for="tipo_usuario"> Tipo de tipo Usuário:</label>
+                        <div class="form-floating">
+
+                            <select class="form-select" name="tipo_usuario" id="tipo_usuario" class="form-control" aria-label="Floating label select example" require>
+                                <option selected>Selecione</option>
+                                <option value="1">Cliente</option>
+                                <option value="2">Funcionário</option>
+
+                            </select>
+
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                            <button type="submit" class="btn btn-primary">Enviar</button>
+                            <button type="submit" class="btn btn-primary">Entrar</button>
                         </div>
+
                     </form>
 
                 </div>
             </div>
         </div>
-
+    </div>
         <!-- Script -->
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
