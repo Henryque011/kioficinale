@@ -1644,16 +1644,18 @@ a:hover {
 
 :root {
     --bs-btn-color: #fff;
-    --bs-btn-bg: #ff5733; /* Altere aqui para a cor desejada */
+    --bs-btn-bg: #ffffff; 
     --bs-btn-border-color: #ff5733;
     --bs-btn-hover-bg: #e14e2d;
     --bs-btn-hover-border-color: #d64527;
 } 
 
 .btn-primary {
-    background-color: var(--bs-btn-bg) !important; /* estilo */
-    border-color: var(--bs-btn-border-color) !important;
+    background-color: rgba(255, 166, 0, 0.445) !important; 
+    border-color: transparent !important;
 }  
+
+
 
 /*--------------------------------------------------------------
 16. RODAPE
@@ -1662,7 +1664,7 @@ a:hover {
 
 
 /*--------------------------------------------------------------
-  . ANIMAÇÕES
+. ANIMAÇÕES
 ----------------------------------------------------------------*/
 /* Animação da bolinha no telefone */
 @keyframes anima {
