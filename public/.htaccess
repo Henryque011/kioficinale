@@ -11,3 +11,4 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
  
 #^(.*)$: É uma expressão regular que captura qualquer coisa após o domínio
+

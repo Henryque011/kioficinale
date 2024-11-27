@@ -10,14 +10,14 @@
     <meta name="author" content="Alessandro Palmeira">
 
     <!-- Favicon Icon -->
-    <link rel="icon" href="<?php BASE_URL ?>assets/img/favicon.svg">
+    <link rel="icon" href="<?php echo BASE_URL ?>assets/img/favicon.svg">
 
     <title>KiOficina - Seu carro em boa mãos</title>
-    <link rel="stylesheet" href="<?php BASE_URL ?>assets/css/reset.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL ?>assets/css/reset.css">
 
     <!-- SLICK -->
-    <link rel="stylesheet" href="<?php BASE_URL ?>assets/css/slick.css">
-    <link rel="stylesheet" href="<?php BASE_URL ?>assets/css/slick-theme.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL ?>assets/css/slick.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL ?>assets/css/slick-theme.css">
 
     <!-- LITY -->
     <link rel="stylesheet" href="<?php BASE_URL ?>assets/css/lity.css">
@@ -98,73 +98,71 @@
                 </div>
                 <div class="modal-body">
 
-                    <form method="POST" action="http://localhost/kioficina/public/auth/login">
+                    <form method="POST" action="http://localhost/KiOficinale/public/auth/login">
                         <div class="mb-3">
                             <label for="email">E-mail</label>
-                            <input type="email" name="email" id="email" class="form-control" require>
+                            <input type="email" name="email" id="email" class="form-control" required>
                         </div>
+
                         <div class="mb-3">
                             <label for="senha">Senha</label>
-                            <input type="password" name="senha" id="senha" class="form-control" require>
+                            <input type="password" name="senha" id="senha" class="form-control" required>
                         </div>
-                        <label for="tipo_usuario"> Tipo de tipo Usuário:</label>
+
+                        <label for="tipo_usuario">Tipo de tipo Usuário:</label>
                         <div class="form-floating">
 
-                            <select class="form-select" name="tipo_usuario" id="tipo_usuario" class="form-control" aria-label="Floating label select example" require>
+                            <select class="form-select" name="tipo_usuario" id="tipo_usuario" class="form-control" aria-label="Floating label select example" required>
                                 <option selected>Selecione</option>
                                 <option value="1">Cliente</option>
                                 <option value="2">Funcionário</option>
-
                             </select>
 
                         </div>
+
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn btn-secondary" cdata-bs-dismiss="modal">Fechar</button>
                             <button type="submit" class="btn btn-primary">Entrar</button>
                         </div>
-
                     </form>
-
                 </div>
             </div>
         </div>
     </div>
-        <!-- Script -->
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Script -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-        <!-- SLICK -->
-        <script src="assets/js/slick.js"></script>
+    <!-- SLICK -->
+    <script src="assets/js/slick.js"></script>
 
-        <!-- LITY -->
-        <script src="assets/js/lity.min.js"></script>
+    <!-- LITY -->
+    <script src="assets/js/lity.min.js"></script>
 
-        <!-- templete  -->
-        <script src="assets/js/plugins/jquery-3.7.1.min.js"></script>
-        <script src="assets/js/plugins/lightgallery.min.js"></script>
-        <script src="assets/js/plugins/simplePagination.min.js"></script>
-        <script src="assets/js/plugins/aos.js"></script>
-        <script src="assets/js/plugins/swiper.min.js"></script>
-        <script src="assets/js/plugins/SplitText.min.js"></script>
-        <script src="assets/js/main.js"></script>
+    <!-- templete  -->
+    <script src="assets/js/plugins/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/plugins/lightgallery.min.js"></script>
+    <script src="assets/js/plugins/simplePagination.min.js"></script>
+    <script src="assets/js/plugins/aos.js"></script>
+    <script src="assets/js/plugins/swiper.min.js"></script>
+    <script src="assets/js/plugins/SplitText.min.js"></script>
+    <script src="assets/js/main.js"></script>
 
-        <!-- Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-        <!-- bootstrap-js -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script> -->
 
-        <script src="assets/js/oficina.js"></script>
+    <!-- bootstrap-js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-        <?php if (isset($msg) && $tipo_msg == 'erro-tipo_usuario'): ?>
-            <script>
-                $(document).ready(function() {
-                    $('#modalLogin').modal('show');
-                });
-            </script>
-        <?php endif; ?>
+    <script src="assets/js/oficina.js"></script>
 
-
-
-        ?>
+    <?php if (isset($msg) && $tipo_msg == 'erro-tipo_usuario'): ?>
+        <script>
+            $(document).ready(function() {
+                $('#modalLogin').modal('show');
+            });
+        </script>
+    <?php endif; ?>
 
 </body>
+
 </html>

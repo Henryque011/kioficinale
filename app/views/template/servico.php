@@ -24,7 +24,7 @@
                                         //var_dump($caminhoArquivo);
                                         if ($servico['foto_galeria'] != "") {
                                             if (file_exists($caminhoArquivo)) {
-                                                // http://localhost/KiOficinale/public/uploads/servico/troca-velas.jpg.jpg
+                                                http://localhost/KiOficinale/public/uploads/servico/troca-velas.jpg
                                                 echo ("http://localhost/KiOficinale/public/uploads/".htmlspecialchars($servico['foto_galeria'], ENT_QUOTES, 'UTF-8'));
                                             } else {
                                                 echo ("http://localhost/KiOficinale/public/uploads/servico/sem-foto-servico.svg");

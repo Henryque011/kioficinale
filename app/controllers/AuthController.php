@@ -16,15 +16,14 @@ class AuthController extends Controller
 
             $tipo_usuario = filter_input(INPUT_POST, 'tipo_usuario');
 
-            // var_dump($email);
-            // var_dump($senha);
-            // var_dump($tipo_usuario);
+            var_dump($email);
+            var_dump($senha);
+            var_dump($tipo_usuario);
 
             if ($email && $senha && $tipo_usuario) {
-                if($tipo_usuario === 'cliente'){
+                if($tipo_usuario === '1'){
                     $usuarioModel = new Cliente();
-                    
-                }elseif($tipo_usuario === 'funcionario'){
+                }elseif($tipo_usuario === '2'){
 
                 }
             } else {
