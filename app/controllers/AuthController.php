@@ -45,13 +45,14 @@ class AuthController extends Controller
                     // var_dump($usuario);
                     $_SESSION['userId'] = $usuario[$campoId];
                     $_SESSION['userTipo'] = $tipo_usuario;
-                    $_SESSION['userNome'] = $campoNome;
+                    $_SESSION['userNome'] = $usuario[$campoNome];
 
                     //Redirecionar para tela de dashborad
                     header('Location:' . BASE_URL . 'dashboard');
                     exit;
 
                 }else{
+                    // var_dump('errado');
                     $_SESSION['login-erro'] = 'E-mail ou senha incorretos';
                 }
 
@@ -59,8 +60,8 @@ class AuthController extends Controller
                 // Credenciais inválidas - dados incompletos
                 $_SESSION['login-erro'] = 'preencha todos os dados'; 
             }
-            // header('location: ' . BASE_URL); //Salvamento por sessão e não em dados
-            // exit;
+            header('location: ' . BASE_URL); //Salvamento por sessão e não em dados
+            exit;
 
             //     if($tipo_usuario === '1'){
             //         $usuarioModel = new Cliente();
@@ -80,9 +81,16 @@ class AuthController extends Controller
         }
 
         // Se p método não for via POST
-        // header('location:' . BASE_URL);
-        // exit;
-        // $this->carregarViews('home', $dados);
+        header('location:' . BASE_URL);
+        exit;
+        $this->carregarViews('home', $dados);
 
+    }
+
+    public function sair() {
+        session_unset(); //limpar variaveis
+        session_destroy(); //destruir sessao
+        header('Location:' . BASE_URL . 'dashboard');
+        exit;
     }
 }
