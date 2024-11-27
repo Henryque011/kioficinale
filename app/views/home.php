@@ -89,6 +89,7 @@
     <?php require_once('template/footer.php'); ?>
 
     <!-- modal -->
+
     <div class="modal" id="modalLogin" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -114,7 +115,6 @@
                                 <option selected>Selecione</option>
                                 <option value="1">Cliente</option>
                                 <option value="2">Funcionário</option>
-
                             </select>
 
                         </div>
@@ -122,49 +122,49 @@
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
                             <button type="submit" class="btn btn-primary">Entrar</button>
                         </div>
-
                     </form>
-
                 </div>
             </div>
         </div>
     </div>
-        <!-- Script -->
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    
+    <!-- Script -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-        <!-- SLICK -->
-        <script src="assets/js/slick.js"></script>
+    <!-- SLICK -->
+    <script src="assets/js/slick.js"></script>
 
-        <!-- LITY -->
-        <script src="assets/js/lity.min.js"></script>
+    <!-- LITY -->
+    <script src="assets/js/lity.min.js"></script>
 
-        <!-- templete  -->
-        <script src="assets/js/plugins/jquery-3.7.1.min.js"></script>
-        <script src="assets/js/plugins/lightgallery.min.js"></script>
-        <script src="assets/js/plugins/simplePagination.min.js"></script>
-        <script src="assets/js/plugins/aos.js"></script>
-        <script src="assets/js/plugins/swiper.min.js"></script>
-        <script src="assets/js/plugins/SplitText.min.js"></script>
-        <script src="assets/js/main.js"></script>
+    <!-- templete  -->
+    <script src="assets/js/plugins/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/plugins/lightgallery.min.js"></script>
+    <script src="assets/js/plugins/simplePagination.min.js"></script>
+    <script src="assets/js/plugins/aos.js"></script>
+    <script src="assets/js/plugins/swiper.min.js"></script>
+    <script src="assets/js/plugins/SplitText.min.js"></script>
+    <script src="assets/js/main.js"></script>
 
-        <!-- Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-        <!-- bootstrap-js -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <!-- bootstrap-js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-        <script src="assets/js/oficina.js"></script>
+    <script src="assets/js/oficina.js"></script>
 
-        <?php if (isset($msg) && $tipo_msg == 'erro-tipo_usuario'): ?>
-            <script>
-                $(document).ready(function() {
-                    $('#modalLogin').modal('show');
-                });
-            </script>
-        <?php endif; ?>
+    <?php if (isset($msg) && $tipo_msg == 'erro-tipo_usuario'): ?>
+        <script>
+            $(document).ready(function() {
+                $('#modalLogin').modal('show');
+            });
+        </script>
+    <?php endif; ?>
 
 
 
-        ?>
+    ?>
 
 </body>
+
 </html>
