@@ -21,10 +21,9 @@ class AuthController extends Controller
             var_dump($tipo_usuario);
 
             if ($email && $senha && $tipo_usuario) {
-                if($tipo_usuario === 'cliente'){
+                if($tipo_usuario === '1'){
                     $usuarioModel = new Cliente();
-                    
-                }elseif($tipo_usuario === 'funcionario'){
+                }elseif($tipo_usuario === '2'){
 
                 }
             } else {
