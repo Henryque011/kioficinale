@@ -13,30 +13,76 @@ class AuthController extends Controller
 
             $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
             $senha = filter_input(INPUT_POST, 'senha');
-
             $tipo_usuario = filter_input(INPUT_POST, 'tipo_usuario');
 
             // var_dump($email);
             // var_dump($senha);
             // var_dump($tipo_usuario);
 
-            if ($email && $senha && $tipo_usuario) {
-                if($tipo_usuario === '1'){
-                    $usuarioModel = new Cliente();
-                }elseif($tipo_usuario === '2'){
+            if ($email && $senha && $tipo_usuario != "Selecione") {
+                if ($tipo_usuario === 'Cliente'){
+                    $usuarioModel   = new Cliente();
+                    $usuario        = $usuarioModel->buscarCliente($email);
+                    $campoSenha     = 'senha_cliente';
+                    $campoId        = 'id_cliente';
+                    $campoNome      = 'nome_cliente';
+                    // var_dump($usuario);
 
+                }elseif($tipo_usuario === 'Funcionario') {
+                    $usuarioModel       = new Funcionario();
+                    $usuario            = $usuarioModel->buscarFunc($email);
+                    $campoSenha         = 'senha_funcionario';
+                    $campoId            = 'id_funcionario';
+                    $campoNome          = 'nome_funcionario';
+                    // var_dump($usuario);
+
+                }else{
+                    $usuario = null;
                 }
+
+                if($usuario && $usuario[$campoSenha] === $senha){
+
+                    // var_dump($usuario);
+                    $_SESSION['userId'] = $usuario[$campoId];
+                    $_SESSION['userTipo'] = $tipo_usuario;
+                    $_SESSION['userNome'] = $campoNome;
+
+                    //Redirecionar para tela de dashborad
+                    header('Location:' . BASE_URL . 'dashboard');
+                    exit;
+
+                }else{
+                    $_SESSION['login-erro'] = 'E-mail ou senha incorretos';
+                }
+
             } else {
-                // informaçoes invalidas
-                if ($tipo_usuario == "selecione") {
-                    $dados['msg'] = 'Tipo de usuario não informado';
-                    $dados['tipo_msg'] = 'erro-tipo_ususario';
-                } else {
-                    $dados['msg'] = 'Email e senha incorretas';
-                    $dados['tipo_msg'] = 'erro';
-                }
+                // Credenciais inválidas - dados incompletos
+                $_SESSION['login-erro'] = 'preencha todos os dados'; 
             }
+            // header('location: ' . BASE_URL); //Salvamento por sessão e não em dados
+            // exit;
+
+            //     if($tipo_usuario === '1'){
+            //         $usuarioModel = new Cliente();
+            //     }elseif($tipo_usuario === '2'){
+
+            //     }
+            // } else {
+            //     // informaçoes invalidas
+            //     if ($tipo_usuario == "selecione") {
+            //         $dados['msg'] = 'Tipo de usuario não informado';
+            //         $dados['tipo_msg'] = 'erro-tipo_ususario';
+            //     } else {
+            //         $dados['msg'] = 'Email e senha incorretas';
+            //         $dados['tipo_msg'] = 'erro';
+            //     }
+            // }
         }
-        $this->carregarViews('home', $dados);
+
+        // Se p método não for via POST
+        // header('location:' . BASE_URL);
+        // exit;
+        // $this->carregarViews('home', $dados);
+
     }
 }

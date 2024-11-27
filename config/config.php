@@ -1,4 +1,9 @@
 <?php
+
+if(session_status() == PHP_SESSION_NONE){
+    session_start();
+}
+
 // Define url base da aplicação
 // define("BASE_URL","https://kioficina.smpsistema.com.br/");
 // Define URl local

@@ -115,8 +115,8 @@
 
                             <select class="form-select" name="tipo_usuario" id="tipo_usuario" class="form-control" aria-label="Floating label select example" required>
                                 <option selected>Selecione</option>
-                                <option value="1">Cliente</option>
-                                <option value="2">Funcionário</option>
+                                <option value="Cliente">Cliente</option>
+                                <option value="Funcionario">Funcionário</option>
                             </select>
 
                         </div>
@@ -156,12 +156,15 @@
 
     <script src="assets/js/oficina.js"></script>
 
-    <?php if (isset($msg) && $tipo_msg == 'erro-tipo_usuario'): ?>
+    <?php var_dump(($_GET['login-erro'])) ?>
+
+    <?php if (isset($_GET['login-erro'])): ?>
         <script>
             $(document).ready(function() {
                 $('#modalLogin').modal('show');
             });
         </script>
+
     <?php endif; ?>
 
 </body>
