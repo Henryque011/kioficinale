@@ -38,11 +38,34 @@ class Servico extends Model
                 WHERE status_servico = 'Ativo' AND link_servico = :link";
 
         $stmt = $this->db->prepare($sql);
-        $stmt->bindValue(':link',$link);
+        $stmt->bindValue(':link', $link);
         $stmt->execute();
         return $stmt->fetch(PDO::FETCH_ASSOC);
-        
     }
+
+    // Método Listar todos os Serviços ativos por ordem alfabética
+    public function getTodosServicos()
+    {
+        $sql = "SELECT 
+            tbl_servico.id_servico, 
+            tbl_galeria.foto_galeria, 
+            tbl_servico.nome_servico,
+            tbl_servico.descricao_servico, 
+            tbl_servico.preco_base_servico, 
+            tbl_servico.tempo_estimado_servico, 
+            tbl_especialidade.nome_especialidade 
+        FROM 
+            tbl_servico
+        INNER JOIN 
+            tbl_galeria ON tbl_servico.id_servico = tbl_galeria.id_galeria
+        INNER JOIN 
+            tbl_especialidade ON tbl_servico.id_especialidade = tbl_especialidade.id_especialidade;";
+        // $sql = "SELECT * FROM tbl_servico WHERE status_servico = 'Ativo' ORDER BY nome_servico ASC";
+        $stmt = $this->db->query($sql);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+
 
     // Método listar todos os Servicos em ordem alfabetica
 }

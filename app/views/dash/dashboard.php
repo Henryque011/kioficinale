@@ -27,6 +27,7 @@
     <!--begin::App Wrapper-->
     <div class="app-wrapper"> <!--begin::Header-->
 
+        <!-- Cabecalho -->
         <nav class="app-header navbar navbar-expand bg-body"> <!--begin::Container-->
 
             <div class="container-fluid"> <!--begin::Start Navbar Links-->
@@ -130,7 +131,7 @@
             </div> <!--end::Container-->
         </nav> <!--end::Header--> <!--begin::Sidebar-->
 
-        <!-- LEFT ACTIONS -->
+        <!-- LEFT ACTIONS - menu lateral -->
         <aside class="app-sidebar bg-body-secondary shadow" data-bs-theme="dark"> <!--begin::Sidebar Brand-->
             <div class="sidebar-brand" style="height: 150px;"> <!--begin::Brand Link--> <a href="./index.html" class="brand-link"> <!--begin::Brand Image--> <img src="http://localhost/KiOficinale/public/assets/img/logo-kioficina-2.svg" alt="AdminLTE Logo" class="brand-image opacity-75 shadow" style="width: 150px; height:150px;"> <!--end::Brand Image--> <!--begin::Brand Text--> <span class="brand-text fw-light"></span> <!--end::Brand Text--> </a> <!--end::Brand Link--> </div> <!--end::Sidebar Brand--> <!--begin::Sidebar Wrapper-->
             <div class=" sidebar-wrapper">
@@ -145,21 +146,21 @@
 
                         <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-gear"></i>
                                 <p>Gestão de Serviço</p>
-                            </a> </li>
+                            </a>
 
-                        <ul class="nav nav-treeview">
-                            <li class="nav-item"> <a href="./widgets/small-box.html" class="nav-link"> <i class="nav-icon bi bi-circle"></i>
-                                    <p>Agendamento de serviços</p>
-                                </a> </li>
-                            <li class="nav-item"> <a href="./widgets/info-box.html" class="nav-link"> <i class="nav-icon bi bi-circle"></i>
-                                    <p>Serviços</p>
-                                </a> </li>
-                            <li class="nav-item"> <a href="./widgets/cards.html" class="nav-link"> <i class="nav-icon bi bi-circle"></i>
-                                    <p>Especialidades</p>
-                                </a> </li>
-                        </ul>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item"> <a href="./widgets/small-box.html" class="nav-link"> <i class="nav-icon bi bi-circle"></i>
+                                        <p>Agendamento de serviços</p>
+                                    </a> </li>
+                                <li class="nav-item"> <a href="http://localhost/KiOficinale/public/servicos/listar" class="nav-link"> <i class="nav-icon bi bi-circle"></i>
+                                        <p>Serviços</p>
+                                    </a> </li>
+                                <li class="nav-item"> <a href="./widgets/cards.html" class="nav-link"> <i class="nav-icon bi bi-circle"></i>
+                                        <p>Especialidades</p>
+                                    </a> </li>
+                            </ul>
                         </li>
-
+                        </li>
                         <li class="nav-item"> <a href="#" class="nav-link"> <i class="bi bi-people-fill"></i>
                                 <p>
                                     Gestão de clientes
@@ -255,112 +256,11 @@
                             </a>
                         </li>
 
-                        <!-- <li class="nav-header">DOCUMENTATIONS</li>
-                        <li class="nav-item"> <a href="./docs/introduction.html" class="nav-link"> <i class="nav-icon bi bi-download"></i>
-                                <p>Installation</p>
-                            </a> </li>
-                        <li class="nav-item"> <a href="./docs/layout.html" class="nav-link"> <i class="nav-icon bi bi-grip-horizontal"></i>
-                                <p>Layout</p>
-                            </a> </li>
-                        <li class="nav-item"> <a href="./docs/color-mode.html" class="nav-link"> <i class="nav-icon bi bi-star-half"></i>
-                                <p>Color Mode</p>
-                            </a> </li>
-                        <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-ui-checks-grid"></i>
-                                <p>
-                                    Components
-                                    <i class="nav-arrow bi bi-chevron-right"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item"> <a href="./docs/components/main-header.html" class="nav-link"> <i class="nav-icon bi bi-circle"></i>
-                                        <p>Main Header</p>
-                                    </a> </li>
-                                <li class="nav-item"> <a href="./docs/components/main-sidebar.html" class="nav-link"> <i class="nav-icon bi bi-circle"></i>
-                                        <p>Main Sidebar</p>
-                                    </a> </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-filetype-js"></i>
-                                <p>
-                                    Javascript
-                                    <i class="nav-arrow bi bi-chevron-right"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item"> <a href="./docs/javascript/treeview.html" class="nav-link"> <i class="nav-icon bi bi-circle"></i>
-                                        <p>Treeview</p>
-                                    </a> </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"> <a href="./docs/browser-support.html" class="nav-link"> <i class="nav-icon bi bi-browser-edge"></i>
-                                <p>Browser Support</p>
-                            </a> </li>
-                        <li class="nav-item"> <a href="./docs/how-to-contribute.html" class="nav-link"> <i class="nav-icon bi bi-hand-thumbs-up-fill"></i>
-                                <p>How To Contribute</p>
-                            </a> </li>
-                        <li class="nav-item"> <a href="./docs/faq.html" class="nav-link"> <i class="nav-icon bi bi-question-circle-fill"></i>
-                                <p>FAQ</p>
-                            </a> </li>
-                        <li class="nav-item"> <a href="./docs/license.html" class="nav-link"> <i class="nav-icon bi bi-patch-check-fill"></i>
-                                <p>License</p>
-                            </a> </li>
-                        <li class="nav-header">MULTI LEVEL EXAMPLE</li>
-                        <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-circle-fill"></i>
-                                <p>Level 1</p>
-                            </a> </li>
-                        <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-circle-fill"></i>
-                                <p>
-                                    Level 1
-                                    <i class="nav-arrow bi bi-chevron-right"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-circle"></i>
-                                        <p>Level 2</p>
-                                    </a> </li>
-                                <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-circle"></i>
-                                        <p>
-                                            Level 2
-                                            <i class="nav-arrow bi bi-chevron-right"></i>
-                                        </p>
-                                    </a>
-                                    <ul class="nav nav-treeview">
-                                        <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-record-circle-fill"></i>
-                                                <p>Level 3</p>
-                                            </a> </li>
-                                        <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-record-circle-fill"></i>
-                                                <p>Level 3</p>
-                                            </a> </li>
-                                        <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-record-circle-fill"></i>
-                                                <p>Level 3</p>
-                                            </a> </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-circle"></i>
-                                        <p>Level 2</p>
-                                    </a> </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-circle-fill"></i>
-                                <p>Level 1</p>
-                            </a> </li>
-                        <li class="nav-header">LABELS</li>
-                        <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-circle text-danger"></i>
-                                <p class="text">Important</p>
-                            </a> </li>
-                        <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-circle text-warning"></i>
-                                <p>Warning</p>
-                            </a> </li>
-                        <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-circle text-info"></i>
-                                <p>Informational</p>
-                            </a> </li>
-                    </ul> end::Sidebar Menu -->
-
                 </nav>
             </div> <!--end::Sidebar Wrapper-->
         </aside> <!--end::Sidebar--> <!--begin::App Main-->
 
-        <!-- content start -->
+        <!-- content start - conteudo -->
         <main class="app-main"> <!--begin::App Content Header-->
             <div class="app-content-header"> <!--begin::Container-->
                 <div class="container-fluid"> <!--begin::Row-->
@@ -380,6 +280,7 @@
                 </div> <!--end::Container-->
 
             </div> <!--end::App Content Header--> <!--begin::App Content-->
+
             <div class="app-content"> <!--begin::Container-->
                 <div class="container-fluid"> <!--begin::Row-->
 
@@ -434,86 +335,19 @@
 
 
                     <div class="row"> <!-- Start col -->
+                        <!-- conteudo -->
+                        <?php
 
-                        <div class="col-md-6 w-100">
-                            <div class="card mb-4">
-                                <div class="card-header">
-                                    <h3 class="card-title">Bordered Table</h3>
-                                </div> <!-- /.card-header -->
-                                <div class="card-body">
-                                    <table class="table table-bordered">
-                                        <thead>
-                                            <tr>
-                                                <th style="width: 10px">#</th>
-                                                <th>Task</th>
-                                                <th>Progress</th>
-                                                <th style="width: 40px">Label</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr class="align-middle">
-                                                <td>1.</td>
-                                                <td>Update software</td>
-                                                <td>
-                                                    <div class="progress progress-xs">
-                                                        <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
-                                                    </div>
-                                                </td>
-                                                <td><span class="badge text-bg-danger">55%</span></td>
-                                            </tr>
-                                            <tr class="align-middle">
-                                                <td>2.</td>
-                                                <td>Clean database</td>
-                                                <td>
-                                                    <div class="progress progress-xs">
-                                                        <div class="progress-bar text-bg-warning" style="width: 70%"></div>
-                                                    </div>
-                                                </td>
-                                                <td> <span class="badge text-bg-warning">70%</span> </td>
-                                            </tr>
-                                            <tr class="align-middle">
-                                                <td>3.</td>
-                                                <td>Cron job running</td>
-                                                <td>
-                                                    <div class="progress progress-xs progress-striped active">
-                                                        <div class="progress-bar text-bg-primary" style="width: 30%"></div>
-                                                    </div>
-                                                </td>
-                                                <td> <span class="badge text-bg-primary">30%</span> </td>
-                                            </tr>
-                                            <tr class="align-middle">
-                                                <td>4.</td>
-                                                <td>Fix and squish bugs</td>
-                                                <td>
-                                                    <div class="progress progress-xs progress-striped active">
-                                                        <div class="progress-bar text-bg-success" style="width: 90%"></div>
-                                                    </div>
-                                                </td>
-                                                <td> <span class="badge text-bg-success">90%</span> </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div> <!-- /.card-body -->
-                            </div> <!-- /.card -->
-                        </div> <!-- /.col -->
+                        if (isset($conteudo)) {
+                            $this->carregarViews($conteudo, $dados);
+                        } else {
+                            echo '<h2> Bem-Vindo 1</h2>';
+                        }
+                        ?>
+                    </div> <!-- /.direct-chat -->
+                    <!-- </div> /.Start col Start col  -->
 
-                        <!-- <div class="col-lg-7 connectedSortable">
-                            <div class="card mb-4">
-                                <div class="card-header">
-                                    <h3 class="card-title">Sales Value</h3>
-                                </div>
-                                <div class="card-body">
-                                    <div id="revenue-chart"></div>
-                                </div>
-                            </div> /.card --> <!-- DIRECT CHAT -->
-
-
-                    </div> <!-- /.card-body -->
-                    <!-- /.card-footer-->
-                </div> <!-- /.direct-chat -->
-                <!-- </div> /.Start col Start col  -->
-
-                <!-- <div class="col-lg-5 connectedSortable">
+                    <!-- <div class="col-lg-5 connectedSortable">
                             <div class="card text-white bg-primary bg-gradient border-primary mb-4">
                                 <div class="card-header border-0">
                                     <h3 class="card-title">Sales Value</h3>
@@ -537,8 +371,8 @@
                                             <div class="text-white">Sales</div>
                                         </div>
                                     </div> end::Row-->
-            </div>
-            <!--end::App Content-->
+                </div>
+                <!--end::App Content-->
         </main> <!--end::App Main--> <!--begin::Footer-->
         <footer class="app-footer"> <!--begin::To the end-->
 
