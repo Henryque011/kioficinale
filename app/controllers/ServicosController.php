@@ -32,7 +32,7 @@ class ServicosController extends Controller{
             // echo 'Carregar as informações do serviço...';
             $dados['titulo'] = $detalheServico['nome_servico'];
             $dados['detalhe'] = $detalheServico;
-            $this->carregarViews('detalhe-sericos', $dados);
+            $this->carregarViews('detalhe-servicos', $dados);
         }else{
             // echo 'Carregar a página de erros';
             $dados['titulo'] = 'Serviços KiOficina';
