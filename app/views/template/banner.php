@@ -4,7 +4,7 @@
         <div class="slide">
 
             <div class="slide-item">
-                <img src="assets/img/hero_slider_bg_1.png" alt="...">
+                <img src="http://localhost/KiOficinale/public/assets/img/hero_slider_bg_1.png" alt="...">
                 <div class="titulo-slide">
                     <div>
                         <h2>Manutenção Preventiva Completa</h2>
@@ -21,7 +21,7 @@
             </div>
 
             <div class="slide-item">
-                <img src="assets/img/hero_slider_bg_2.png" alt="...">
+                <img src="http://localhost/KiOficinale/public/assets/img/hero_slider_bg_2.png" alt="...">
                 <div class="titulo-slide">
                     <div>
                         <h2>Diagnóstico de Injeção Eletrônica</h2>
@@ -38,7 +38,7 @@
             </div>
 
             <div class="slide-item">
-                <img src="assets/img/hero_slider_bg_1.png" alt="...">
+                <img src="http://localhost/KiOficinale/public/assets/img/hero_slider_bg_1.png" alt="...">
                 <div class="titulo-slide">
                     <div>
                         <h2>Troca de Óleo e Filtros</h2>
@@ -55,7 +55,7 @@
             </div>
 
             <div class="slide-item">
-                <img src="assets/img/hero_slider_bg_2.png" alt="...">
+                <img src="http://localhost/KiOficinale/public/assets/img/hero_slider_bg_2.png" alt="...">
                 <div class="titulo-slide">
                     <div>
                         <h2>Alinhamento e Balanceamento de Rodas</h2>

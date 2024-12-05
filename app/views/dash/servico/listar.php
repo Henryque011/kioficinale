@@ -22,17 +22,19 @@
     <tbody>
         <?php foreach ($listarServico as $linha): ?>
             <tr>
+                <!-- <img src="http://localhost/KiOficinale/public/uploads/galeria/test.jpg"> -->
                 <th scope="row"><?php echo $linha['id_servico'] ?></th>
-                <td><?php echo $linha['foto_galeria'] ?></td>
-
+                <td> <img src="<?php echo BASE_URL . 'uploads/' . $linha['foto_galeria']; ?>"
+                        alt="<?php echo $linha['nome_servico']; ?>"
+                        style="width: 100px; height: auto;"></td>
                 <td><?php echo $linha['nome_servico'] ?></td>
                 <td><?php echo $linha['descricao_servico'] ?></td>
                 <td><?php echo $linha['preco_base_servico'] ?></td>
                 <td><?php echo $linha['tempo_estimado_servico'] ?></td>
                 <td><?php echo $linha['nome_especialidade'] ?></td>
-                <td>editar</td>
-                <td>desativar</td>
-                <?php var_dump (BASE_URL . 'uploud/' . $linha['foto_galeria']);?>
+                <td><i class="bi bi-pen"></i></td>
+                <td><i class="bi bi-trash"></i></td>
+                <?php var_dump(BASE_URL . 'uploads/' . $linha['foto_galeria']); ?>
             </tr>
         <?php endforeach; ?>
     </tbody>

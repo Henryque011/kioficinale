@@ -130,8 +130,8 @@
             </div>
         </div>
     </div>
-        <!-- Script -->
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Script -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
     <!-- SLICK -->
     <script src="assets/js/slick.js"></script>

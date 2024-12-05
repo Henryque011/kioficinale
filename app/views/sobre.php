@@ -9,7 +9,7 @@
 
     <!-- Favicon Icon -->
     <link rel="icon" href="<?php BASE_URL ?>assets/img/favicon.svg">
-<!-- ? = se : = senao-->
+    <!-- ? = se : = senao-->
     <title>
         <?php echo isset($titulo) ? $titulo : 'Sobre - Ki Oficina' ?>
     </title>
@@ -33,7 +33,7 @@
     <!-- Seção final do cabeçalho -->
 
     <!-- Rodape -->
-    <?php require_once ('template/footer.php'); ?>
+    <?php require_once('template/footer.php'); ?>
 
     <!-- Script -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
@@ -44,9 +44,8 @@
     <!-- LITY -->
     <script src="assets/js/lity.min.js"></script>
 
-
     <script src="assets/js/oficina.js"></script>
-    
+
 
 
 </body>
