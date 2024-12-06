@@ -5,7 +5,7 @@
     <!-- Meta Tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="A">
+    <meta name="author" content="Henryque Nonato">
 
     <!-- Favicon Icon -->
     <link rel="icon" href="<?php BASE_URL ?>http://localhost/KiOficinale/public/assets/img/favicon.svg">

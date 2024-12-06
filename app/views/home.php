@@ -7,7 +7,7 @@
     <!-- Meta Tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Alessandro Palmeira">
+    <meta name="author" content="Henryque Nonato">
 
     <!-- Favicon Icon -->
     <link rel="icon" href="<?php echo BASE_URL ?>assets/img/favicon.svg">
