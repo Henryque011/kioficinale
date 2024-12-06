@@ -2,6 +2,7 @@
 
 class Core{
     // Método inicializar o processo de ROTAS
+    // Função publica chamada "executar"
     public function executar(){
         $url = '/';
         // var_dump($url);
