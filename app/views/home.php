@@ -7,7 +7,7 @@
     <!-- Meta Tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Alessandro Palmeira">
+    <meta name="author" content="Henryque Nonato">
 
     <!-- Favicon Icon -->
     <link rel="icon" href="<?php echo BASE_URL ?>assets/img/favicon.svg">
@@ -130,8 +130,8 @@
             </div>
         </div>
     </div>
-        <!-- Script -->
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Script -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
     <!-- SLICK -->
     <script src="assets/js/slick.js"></script>

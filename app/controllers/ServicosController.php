@@ -64,7 +64,7 @@ class ServicosController extends Controller
         }
 
         $dados = array();
-        $dados['listarServico'] = $this->servicoModel->getTodosServicoS();
+        $dados['listarServico'] = $this->servicoModel->getTodosServicos();
         // var_dump($dados['listarServico']);
         $dados['conteudo'] = 'dash/servico/listar';
 

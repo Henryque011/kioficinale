@@ -32,10 +32,11 @@ define('USER_EMAIL','henryquenonatosilva@gmail.com');
 define('PASS_EMAIL','rvoh totu dndy wmck');
 
 
-// Sistema de autoload das class
+// Sistema de autoload das class - Function para o autoload - "$classe" é uma class
 spl_autoload_register(function ($classe){
 
     if(file_exists('../app/controllers/'. $classe . '.php')){
+        //  caminho - nome do arquivo - fim do arquivo .php
         // ../app/controllers/HomeController.php
         require_once '../app/controllers/'. $classe .'.php';
         //var_dump('../app/controllers/'. $classe .'.php');

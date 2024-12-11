@@ -7,22 +7,28 @@
             <section class="marcas">
                 <div class="site">
                     <h4>Marcas Confiáveis</h4>
-                    <?php foreach ($marcas as $marca): ?>
-                        <div>
-                            <img src="<?php
-                                        $caminhoArquivo = $_SERVER['DOCUMENT_ROOT'] . "/KiOficinale/public/uploads/" . $marca['logo_marca'];
-                                        if ($marca['logo_marca'] != "") {
-                                            if (file_exists($caminhoArquivo)) {
-                                                echo "http://localhost/KiOficinale/public/uploads/" . htmlspecialchars($marca['logo_marca'], ENT_QUOTES, 'UTF-8');
+
+                    <?php if (!empty($marcas)): ?>
+                        <?php foreach ($marcas as $marca): ?>
+                            <div>
+                                <img src="<?php
+                                            $caminhoArquivo = $_SERVER['DOCUMENT_ROOT'] . "/KiOficina/public/uploads/" . $marca['logo_marca'];
+                                            if (!empty($marca['logo_marca'])) {
+                                                if (file_exists($caminhoArquivo)) {
+                                                    echo "http://localhost/KiOficinale/public/uploads/" . htmlspecialchars($marca['logo_marca'], ENT_QUOTES, 'UTF-8');
+                                                } else {
+                                                    echo "http://localhost/KiOficinale/public/uploads/marca/sem-foto-servico.svg";
+                                                }
                                             } else {
-                                                echo "http://localhost/KiOficinale/public/uploads/marcas/sem-foto-servico.svg";
+                                                echo "http://localhost/KiOficinale/public/uploads/marca/sem-foto-servico.svg";
                                             }
-                                        } else {
-                                            echo "http://localhost/KiOficinale/public/uploads/marcas/sem-foto-servico.svg";
-                                        }
-                                        ?>" alt="Imagem da Marca">
-                        </div>
-                    <?php endforeach; ?>
+                                            ?>" alt="Imagem da Marca">
+                            </div>
+                        <?php endforeach; ?>
+                    <?php else: ?>
+                        <p>Nenhuma marca disponível no momento.</p>
+                    <?php endif; ?>
+
                 </div>
             </section>
 
