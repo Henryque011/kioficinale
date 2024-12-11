@@ -8,3 +8,4 @@ $nucleo = new Core();
 $nucleo ->executar();
 //echo('Hello World');
 ?>
+2
