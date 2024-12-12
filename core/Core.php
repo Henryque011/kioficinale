@@ -1,21 +1,23 @@
 <?php
 
-class Core{
+class Core
+{
     // Método inicializar o processo de ROTAS
     // Função publica chamada "executar"
-    public function executar(){
+    public function executar()
+    {
         $url = '/';
         // var_dump($url);
         // Verificar se a variavel URL está definida na $_GET
         // isset = verificar se uma var foi inicializada
-        if(isset($_GET['url'])){
+        if (isset($_GET['url'])) {
             $url .= $_GET['url'];
         }
         //var_dump($url);
         //  Defininfo um array para armazenar os parametros da URL
         $parametro = array();
         //  Verifica se a URL não está vazia e se não é apenas uma /
-        if(!empty($url) && $url != '/'){
+        if (!empty($url) && $url != '/') {
 
             // servicos  /especialidade  /nomeServico
             // controller  /ação  /parametro
@@ -27,7 +29,7 @@ class Core{
 
             // array_shift desloca um elemneto do ínicio do array
             array_shift($url);
-            
+
             //var_dump($url);
             // $url[0]: Obter o controller atual
             // ucfirst- Colocar a primeira letra em maiúscula
@@ -42,21 +44,21 @@ class Core{
             // nomeServico=[1]
 
             //verificar se existe um ação na URL
-            if(isset($url[0]) && !empty($url[0])){
+            if (isset($url[0]) && !empty($url[0])) {
                 $acaoAtual = $url[0];
                 //$acaoAtual = especialidade
                 //var_dump("Nome da ação atual: " . $acaoAtual);
                 array_shift($url);
-            }else{
+            } else {
                 $acaoAtual = 'index';
                 //var_dump($acaoAtual)
             }
             // Os parametros
             // conta os elementos de um array
-            if(count($url) > 0){
+            if (count($url) > 0) {
                 $parametro = $url;
             }
-        }else{
+        } else {
             $controladorAtual = 'HomeController';
             $acaoAtual = 'index';
             //var_dump("Controlador Atual: " .$controladorAtual);
@@ -65,8 +67,7 @@ class Core{
 
         // // '||' operador lógico ou
         // // Vereificando se o arquivo do CONTROLLER existe e se o método na class
-        if(!file_exists('../app/controllers/' . $controladorAtual . '.php') || !method_exists
-        ($controladorAtual, $acaoAtual)) {
+        if (!file_exists('../app/controllers/' . $controladorAtual . '.php') || !method_exists($controladorAtual, $acaoAtual)) {
 
             // Se não existir defina o controller como ErroController
             $controladorAtual = 'ErroController';
