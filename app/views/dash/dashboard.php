@@ -341,7 +341,8 @@
                         if (isset($conteudo)) {
                             $this->carregarViews($conteudo, $dados);
                         } else {
-                            echo '<h2> Bem-Vindo 1</h2>';
+                            echo '<h2> Bem-Vindo 2</h2>';
+                            // echo '<h2> 2w2w2w </h2>';
                         }
                         ?>
                     </div> <!-- /.direct-chat -->
