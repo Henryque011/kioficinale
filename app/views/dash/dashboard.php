@@ -130,8 +130,6 @@
                 </ul> <!--end::End Navbar Links-->
             </div> <!--end::Container-->
         </nav> <!--end::Header--> <!--begin::Sidebar-->
-
-        <!-- LEFT ACTIONS - menu lateral -->
         <aside class="app-sidebar bg-body-secondary shadow" data-bs-theme="dark"> <!--begin::Sidebar Brand-->
             <div class="sidebar-brand" style="height: 150px;"> <!--begin::Brand Link--> <a href="./index.html" class="brand-link"> <!--begin::Brand Image--> <img src="http://localhost/KiOficinale/public/assets/img/logo-kioficina-2.svg" alt="AdminLTE Logo" class="brand-image opacity-75 shadow" style="width: 150px; height:150px;"> <!--end::Brand Image--> <!--begin::Brand Text--> <span class="brand-text fw-light"></span> <!--end::Brand Text--> </a> <!--end::Brand Link--> </div> <!--end::Sidebar Brand--> <!--begin::Sidebar Wrapper-->
             <div class=" sidebar-wrapper">
@@ -341,7 +339,7 @@
                         if (isset($conteudo)) {
                             $this->carregarViews($conteudo, $dados);
                         } else {
-                            echo '<h2> Bem-Vindo 2</h2>';
+                            echo '<h2> Bem-Vindo 1x</h2>';
                             // echo '<h2> 2w2w2w </h2>';
                         }
                         ?>
