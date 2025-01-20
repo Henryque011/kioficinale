@@ -7,5 +7,6 @@
 
 <h2>teste 2</h2>
 
-<img src="public/assets/img/sem-foto-cliente1" alt="#">
+<!-- <img src="public/assets/img/sem-foto-cliente1" alt="#"> -->
+<img src="../../../../public/assets/img/sem-foto-cliente.png" alt="">
 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas asperiores necessitatibus in tenetur perferendis rerum odit minus deleniti excepturi quis doloremque ipsam minima, illum quas, nobis harum nostrum fuga. Quo!</p>
