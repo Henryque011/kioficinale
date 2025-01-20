@@ -34,7 +34,7 @@
                 <td><?php echo $linha['nome_especialidade'] ?></td>
                 <td><i class="bi bi-pen"></i></td>
                 <td><i class="bi bi-trash"></i></td>
-                <?php var_dump(BASE_URL . 'uploads/' . $linha['foto_galeria']); ?>
+                <!-- <?php var_dump(BASE_URL . 'uploads/' . $linha['foto_galeria']); ?> -->
             </tr>
         <?php endforeach; ?>
     </tbody>
