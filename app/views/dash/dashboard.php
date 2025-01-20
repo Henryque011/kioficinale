@@ -339,7 +339,7 @@
                         if (isset($conteudo)) {
                             $this->carregarViews($conteudo, $dados);
                         } else {
-                            echo '<h2> Bem-Vindo 1x</h2>';
+                            echo '<h2> Bem-Vindo</h2>';
                             // echo '<h2> 2w2w2w </h2>';
                         }
                         ?>
