@@ -4,6 +4,8 @@
 <a href="http://localhost/KiOficinale/public/servicos/editar">EDITAR</a>
 <a href="http://localhost/KiOficinale/public/servicos/desativar">DESATIVAR</a>
 <a href="http://localhost/KiOficinale/public/servicos/listar">LISTAR</a>
+<a href="http://localhost/KiOficinale/public/servicos/listar">LISTAR</a>
+
 <h2>edede</h2>
 
 <img src="public/assets/img/sem-foto-cliente1" alt="">
