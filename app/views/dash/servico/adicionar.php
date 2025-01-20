@@ -7,4 +7,19 @@
 
 <img src="http://localhost/KiOficinale/public/assets/img/sem-foto-cliente.png" alt="2" style="width: 400px; padding: 10px; margin: 10px;">
 
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas asperiores necessitatibus in tenetur perferendis rerum odit minus deleniti excepturi quis doloremque ipsam minima, illum quas, nobis harum nostrum fuga. Quo!</p>
+<form>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
