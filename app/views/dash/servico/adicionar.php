@@ -73,7 +73,10 @@
         arquivo.addEventListener('change', function(){
             if(arquivo.files && arquivo.files[0]){
                 let render = FileReader();
-                
+                render.onload = function(e){
+                    visualizarImg.src = e.target.resut 
+                render.readAsDataURL(arquivo.files[0]);
+                }
             }
         })
     })
