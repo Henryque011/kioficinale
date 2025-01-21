@@ -5,21 +5,47 @@
 <a href="http://localhost/KiOficinale/public/servicos/desativar">DESATIVAR</a>
 <a href="http://localhost/KiOficinale/public/servicos/listar">LISTAR</a>
 
-<img src="http://localhost/KiOficinale/public/assets/img/sem-foto-cliente.png" alt="2" style="width: 400px; padding: 10px; margin: 10px;">
+<div class="side" style="display: flex; justify-content: space-between;">
+    <img src="http://localhost/KiOficinale/public/assets/img/sem-foto-cliente.png" alt="2" style="width: 400px; padding: 10px; margin: 10px;">
 
-<form>
-    <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-    </div>
-    <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1">
-    </div>
-    <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+    <form style="width: 100%;">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Nome do Serviço:</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <!-- <div id="emailHelp" class="form-text">descrição.</div> -->
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Descrição do Serviço:</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="side "style="display: flex; margin: 20px;">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Preço Base:</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <!-- <div id="emailHelp" class="form-text">descrição.</div> -->
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Tempo estimado:</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="--:--">
+                <!-- <div id="emailHelp" class="form-text">descrição.</div> -->
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Status de Serviço::</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ativo">
+                <!-- <div id="emailHelp" class="form-text">descrição.</div> -->
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Se não existir a especialidade desejada, informe no campo a baixo:</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <!-- <div id="emailHelp" class="form-text">descrição.</div> -->
+        </div>
+
+        <!-- <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">t</label> 
+        </div> -->
+        <button type="submit" class="btn btn-primary">Salvar</button>
+        <button type="submit" class="btn btn-second " style="background-color: grey;  color: white;">Cancelar</button>
+    </form>
+</div>
