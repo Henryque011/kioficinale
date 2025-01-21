@@ -53,7 +53,7 @@
             <label class="form-check-label" for="exampleCheck1">t</label> 
         </div> -->
     <form>
-        
+
     </form>
     <button type="submit" class="btn btn-primary">Salvar</button>
     <button type="submit" class="btn btn-second " style="background-color: grey;  color: white;">Cancelar</button>
@@ -61,21 +61,22 @@
 </div>
 
 <script>
-
-    document.addEventListener('DOMContentLoaded', function(){
+    document.addEventListener('DOMContentLoaded', function() {
         const visualizarImg = document.getElementsById('preview-img');
         const arquivo = document.getElementById('foto_galeria');
 
-        visualizarImg.addEventListener('click', function(){
+        visualizarImg.addEventListener('click', function() {
             arquivo.click()
         })
 
-        arquivo.addEventListener('change', function(){
-            if(arquivo.files && arquivo.files[0]){
-                let render = FileReader();
-                render.onload = function(e){
-                    visualizarImg.src = e.target.resut 
-                render.readAsDataURL(arquivo.files[0]);
+        arquivo.addEventListener('change', function() {
+                if (arquivo.files && arquivo.files[0]) {
+                    let render = FileReader();
+                    render.onload = function(e) {
+                        visualizarImg.src = e.target.resut
+                    }
+                    
+                    render.readAsDataURL(arquivo.files[0]);
                 }
             }
         })
