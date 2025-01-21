@@ -7,7 +7,7 @@
 
 <div class="side" style="display: flex; justify-content: space-between;">
     <img src="http://localhost/KiOficinale/public/assets/img/sem-foto-cliente.png" alt="2" style="width: 400px; padding: 10px; margin: 10px;">
-
+    <input type="file" name="foto_galeira" id="foto_ghaleria" style="display: none;" accept="image/*"
     <form style="width: 100%;">
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Nome do Serviço:</label>
