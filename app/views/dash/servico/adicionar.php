@@ -63,6 +63,9 @@
 <script>
 
     document.addEventListener('DOMContentLoaded', function(){
+        const visualizarImg = document.getElementsById('preview-img');
+        const arquivo = document.getElementById('foto_galeria');
+
         
     })
 </script>
