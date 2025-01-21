@@ -62,5 +62,7 @@
 
 <script>
 
-    document.addEventListener('DOMContentLoaded')
+    document.addEventListener('DOMContentLoaded', function(){
+        
+    })
 </script>
