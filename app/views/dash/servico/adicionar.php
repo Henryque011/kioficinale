@@ -71,7 +71,10 @@
         })
 
         arquivo.addEventListener('change', function(){
-            
+            if(arquivo.files && arquivo.files[0]){
+                let render = FileReader();
+                
+            }
         })
     })
 </script>
