@@ -35,9 +35,9 @@
             <!-- <div id="emailHelp" class="form-text">descrição.</div> -->
         </div>
         <div class="form-group col-md-4">
-            <label for="inputState">State</label>
+            <label for="inputState">Especialidade Existente</label>
             <select id="inputState" class="form-control">
-                <option selected>Choose...</option>
+                <option selected>-Selecione-</option>
                 <option>...</option>
             </select>
         </div>
@@ -66,6 +66,8 @@
         const visualizarImg = document.getElementsById('preview-img');
         const arquivo = document.getElementById('foto_galeria');
 
-        
+        visualizarImg.addEventListener('click', function(){
+            arquivo.click()
+        })
     })
 </script>
