@@ -1655,8 +1655,9 @@ a:hover {
     border-color: transparent !important;
 }  
 
- 
-
+btn btn-second{
+    background-color: grey;
+}
 /*--------------------------------------------------------------
 16. RODAPE
 ----------------------------------------------------------------*/
