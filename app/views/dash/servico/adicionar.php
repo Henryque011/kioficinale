@@ -69,5 +69,9 @@
         visualizarImg.addEventListener('click', function(){
             arquivo.click()
         })
+
+        arquivo.addEventListener('change', function(){
+            
+        })
     })
 </script>
